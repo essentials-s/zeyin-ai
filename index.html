@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeyin AI - Welcome</title>
+    <style>
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background-color: #0f172a; overflow: hidden;
+            display: flex; justify-content: center; align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white; text-align: center;
+        }
+        .title {
+            font-size: 6rem; font-weight: 900; z-index: 10;
+            letter-spacing: 5px; text-transform: uppercase;
+        }
+        .subtitle {
+            font-size: 1.5rem; color: #94a3b8; margin-bottom: 2rem; z-index: 10;
+        }
+        .btn-start {
+            padding: 15px 40px; font-size: 1.2rem; font-weight: bold;
+            background: #3b82f6; color: white; border: none;
+            border-radius: 30px; cursor: pointer; z-index: 10;
+            text-decoration: none; transition: 0.3s;
+        }
+        .btn-start:hover { background: #2563eb; transform: scale(1.05); }
+        
+        /* Простая анимация падающих волн на фоне */
+        .wave {
+            position: absolute; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(59,130,246,0.1) 10%, transparent 20%),
+                        radial-gradient(circle, rgba(147,197,253,0.1) 10%, transparent 20%);
+            background-size: 50px 50px;
+            animation: fall 10s linear infinite; z-index: 1;
+            opacity: 0.5;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-50%) rotate(0deg); }
+            100% { transform: translateY(0%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="wave"></div>
+    <div>
+        <div class="title">Welcome</div>
+        <div class="subtitle">to Zeyin AI</div>
+        <a href="chat.html" class="btn-start">Начать / Start / Бастау</a>
+    </div>
+</body>
+</html>
